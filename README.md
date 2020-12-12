@@ -14,6 +14,8 @@
 <li>React</li>
 <li>Jquery (Well, I <em>used</em> to but rarely anymore)</li>
 <li>Bootstrap</li>
+<li>Python</li>
+<li>Flask (Backend Python Library)</li>
 </ul>
 
 <h4>I am the Leviathan.  The Dragon.  The Unknown coder.</h4>
