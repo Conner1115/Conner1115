@@ -20,3 +20,4 @@
 
 <h4>I am the Leviathan.  The Dragon.  The Unknown coder.</h4>
 <img src = "https://www.khanacademy.org/computer-programming/my-logo/6657230242725888/5945266084724736.png">
+<img align="center" alt="LeviathanProgramming's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Conner1115&show_icons=true&theme=radical" />
