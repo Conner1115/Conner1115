@@ -1,7 +1,7 @@
 <h2>Hello, I'm LeviathanProgramming</h2>
 <p>A fifteen-year-old who loves to code.</p>
 
-<p>You can find me on <a href = "https://www.khanacademy.org/profile/LeviathanProgramming/">Khan Academy</a>, <a href = "https://forum.freecodecamp.org/u/connerow1115/">Freecodecamp</a>, <a href = "https://github.com/Conner1115">github</a>, and openprocessing.</p>
+<p>You can find me on <a href = "https://www.khanacademy.org/profile/LeviathanProgramming/">Khan Academy</a>, <a href = "https://forum.freecodecamp.org/u/connerow1115/">Freecodecamp</a>, <a href = "https://github.com/Conner1115">github</a>, <a href="https://dev.to">Dev.to</a>, and <a href="https://www.openprocessing.org/user/241040/">openprocessing</a>.</p>
 
 <h4>I use the following Languages/Libraries:</h4>
 <ul>
