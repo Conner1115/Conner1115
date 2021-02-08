@@ -1,0 +1,255 @@
+:root {
+  --bg: black;
+  --orb: "Orbitron", sans-serif;
+  --mont: "Montserrat", sans-serif;
+  --full-width: 100%;
+  --full-height: 100%;
+  --gd: rgb(255, 200, 0);
+  --gdd: rgb(225, 175, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+canvas {
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0 0 3px rgba(0, 150, 255, 0.5);
+  font-family: var(--orb);
+}
+a {
+  color: var(--gd);
+  text-decoration: none;
+}
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-family: var(--mont);
+  color: white;
+}
+
+#full-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#dragon {
+  stroke-dasharray: 12278.830078125;
+  animation: draw 10s ease-in-out;
+  position: absolute;
+  animation-fill-mode: forwards;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  padding: 0;
+  stroke: var(--gd);
+  fill: black;
+  stroke-width: 1;
+  z-index: 5;
+}
+#description-holder {
+  position: absolute;
+  width: 100%;
+  background: rgb(50, 50, 50);
+  z-index: 6;
+}
+#scroll-button {
+  z-index: 5;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -30px;
+  color: var(--gd);
+  border: solid var(--gd) 1px;
+  border-radius: 50%;
+  font-size: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+#scroll-button:hover {
+  cursor: pointer;
+}
+#hb {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+}
+#hb:hover {
+  cursor: pointer;
+}
+#nav {
+  position: fixed;
+  top: 0;
+  left: -202px;
+  background: black;
+  width: 200px;
+  height: 100%;
+  border-right: solid var(--gdd) 2px;
+  color: var(--gd);
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  overflow-x: hidden;
+}
+#close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+}
+#close:hover {
+  cursor: pointer;
+}
+#footer {
+  position: absolute;
+  bottom: 0px;
+  font-family: var(--mont);
+  font-size: 12px;
+  margin: 10px;
+}
+#sec2 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Artist%27s_rendering_ULAS_J1120%2B0641.jpg/2000px-Artist%27s_rendering_ULAS_J1120%2B0641.jpg);
+}
+#sec4{
+  background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Black_Holes_-_Monsters_in_Space.jpg/1920px-Black_Holes_-_Monsters_in_Space.jpg);
+}
+
+.responsive-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px;
+  padding: 25px;
+}
+.project {
+  min-width: 250px;
+  max-width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: solid white 1px;
+  background: black;
+}
+.spec-hd {
+  color: black;
+  text-shadow: 1px 1px 0px var(--gdd), -1px -1px 0px var(--gd),
+    -1px 1px 0px var(--gd), 1px -1px 0px var(--gdd);
+}
+.nav-link {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-family: var(--orb);
+  background: rgb(25, 25, 25);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  transition: 0.5s;
+  box-shadow: -204px 0 0 4px var(--gdd), 204px 0 0 4px var(--gdd);
+}
+.nav-link:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background: black;
+  box-shadow: 0px 0 0 3px var(--gdd), 0px 0 0 3px var(--gdd);
+}
+.parallax {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.par-cov {
+  position: absolute;
+  top: 110%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.layer {
+  background: var(--gd);
+  width: 40px;
+  margin-left: 5px;
+  height: 5px;
+  margin-top: 7.5px;
+}
+.sec {
+  width: 100%;
+  min-height: 100%;
+}
+
+@media (max-width: 400px) {
+  #dragon {
+    stroke-width: 3;
+    top: 15%;
+  }
+  #desc {
+    display: none;
+  }
+  #scroll-button {
+    display: block !important;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 12278.830078125;
+  }
+  100% {
+    stroke-dashoffset: 9500;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(50, 50, 50);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(150, 150, 150);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(200, 200, 200);
+}
