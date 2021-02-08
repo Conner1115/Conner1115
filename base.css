@@ -40,11 +40,6 @@ a {
   color: var(--gd);
   text-decoration: none;
 }
-a:hover{
-  color:var(--gdd);
-  transition:0.25s;
-  cursor:pointer;
-}
 p {
   padding-left: 10%;
   padding-right: 10%;
@@ -295,11 +290,13 @@ p {
   background-repeat: no-repeat;
 }
 .par-cov {
-  position: absolute;
-  top: 110%;
+  position: relative;
+  top: 10%;
   left: 10%;
   width: 80%;
-  height: 80%;
+  height:80%;
+  overflow-y:auto;
+  max-height: 80%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
