@@ -40,6 +40,11 @@ a {
   color: var(--gd);
   text-decoration: none;
 }
+a:hover{
+  color:var(--gdd);
+  transition:0.25s;
+  cursor:pointer;
+}
 p {
   padding-left: 10%;
   padding-right: 10%;
