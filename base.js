@@ -12,7 +12,10 @@ function setStats(){
   cssVar("--full-height",window.innerHeight+"px");
   cssVar("--full-width",window.innerWidth+"px");
 }
-window.onload = setStats;
+window.onload = function(){
+  setStats();
+  $st("#loader").display = "none";
+};
 window.onresize = setStats;
 function closeNav(){
   $st("#nav").transition = "0.5s";
